@@ -4,8 +4,6 @@ import { getCalculateService } from '../services/calculate.service';
 const calculateController = async (req: Request, res: Response) => {
   try {
     const userId = req.body.userId;
-
-    console.log(userId);
     const productsIds = req.body.productsIds;
     const values = await getCalculateService(userId, productsIds);
 
