@@ -9,3 +9,9 @@ export interface Product {
   name: string;
   price: number;
 }
+
+export interface IValues {
+  user: string;
+  values: string[];
+  totalValue: string;
+}
