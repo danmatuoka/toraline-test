@@ -7,7 +7,7 @@ export const getUserService = async (): Promise<User[]> => {
   return data;
 };
 
-export const getUserCalculateService = (
+export const userCalculateService = (
   user: User,
   productsIds: number[],
   products: Product[]
