@@ -10,8 +10,12 @@ export interface Product {
   price: number;
 }
 
+export interface IProductValue {
+  productId: number;
+  value: number;
+}
+
 export interface IValues {
-  user: string;
-  values: string[];
-  totalValue: string;
+  values: IProductValue[];
+  total: number;
 }
