@@ -7,7 +7,7 @@ export const userCalculateController = async (req: Request, res: Response) => {
   try {
     const userId = req.params.id;
     const productsIds = req.body.productsIds;
-    const { data } = await api.get(`usrs/${userId}`);
+    const { data } = await api.get(`users/${userId}`);
     const products = await getProductService();
 
     const users = userCalculateService(data, productsIds, products);
