@@ -1,7 +1,11 @@
-import { userCalculateService } from '../../services/user.service';
+import { userCalculateService } from '../../services/userCalculate.service';
 import { mockOneUser, mockProducts } from '../__mocks__';
 
 describe('getUserCalculateService', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   const productsIds = [1, 2];
 
   it('calculates the values and total correctly', () => {

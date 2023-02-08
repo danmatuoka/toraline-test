@@ -12,3 +12,5 @@ app.use('/products', productRoutes);
 app.listen(3000, () => {
   console.log('Server running 🥳');
 });
+
+export default app;

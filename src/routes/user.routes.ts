@@ -1,8 +1,6 @@
 import { Router } from 'express';
-import {
-  getUserController,
-  userCalculateController,
-} from '../controllers/user.controller';
+import { getUserController } from '../controllers/user.controller';
+import { userCalculateController } from '../controllers/userCalculate.controller';
 import validateProductsIds from '../middlewares/validateData.middleware';
 
 const userRoutes = Router();

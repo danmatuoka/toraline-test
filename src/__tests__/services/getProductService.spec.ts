@@ -3,6 +3,10 @@ import { getProductService } from '../../services/product.service';
 import { mockProducts } from '../__mocks__';
 
 describe('getProductService', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   it('should return a list of products', async () => {
     jest.spyOn(api, 'get').mockResolvedValue({ data: mockProducts });
 
